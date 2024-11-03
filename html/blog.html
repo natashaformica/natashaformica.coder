@@ -23,9 +23,9 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../img/logo.jpg" alt="foto logo" style="width: 50%"
-        /></a>
+        <a class="navbar-brand" href="index.html">
+          <img src="../img/logo.png" alt="foto logo" style="width: 50%" />
+        </a>
 
         <button
           class="navbar-toggler"
@@ -40,7 +40,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link" href="../index.html">Inicio</a>
             </li>
@@ -57,22 +57,34 @@
               <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
           </ul>
+          <a href="destinos.html" class="btn btn-primary ms-2"
+            >Reservar ahora</a
+          >
         </div>
       </div>
     </nav>
     <!-- FIN NAVBAR -->
 
+    <!-- HERO SECTION -->
     <header
       class="hero-section text-center p-5"
       style="
-        background-image: url('../img/paris.jpg'); /* height: 30px; */
+        background-image: url('../img/blog1.jpg'); /* height: 30px; */
         min-height: 200px;
       "
     >
       <div class="container">
-        <h1 class="display-4 fw-bold">Relatos y Experiencias de Viaje</h1>
+        <h1 class="display-4">Relatos y experiencias</h1>
+        <p class="lead">
+          Descubre los mejores destinos y ofertas exclusivas para tus próximas
+          vacaciones.
+        </p>
       </div>
     </header>
+
+    <section class="container my-5">
+    <h2 class="text-center">En primera persona</h2>
+    </section>
 
     <!-- RELATOS Y EXPERIENCIAS -->
     <div class="container my-5">
@@ -86,10 +98,9 @@
               alt="Relato 1"
             />
             <div class="card-body">
-              <h5 class="card-title">Título del Relato 1</h5>
+              <h5 class="card-title">Redescubre Tu País</h5>
               <p class="card-text">
-                Descripción corta del relato de viaje. Lorem ipsum dolor sit
-                amet.
+                Los mejores destinos locales que puedes explorar sin salir de casa.
               </p>
               <a href="#" class="btn btn-primary">Leer más</a>
             </div>
@@ -104,10 +115,10 @@
               alt="Relato 2"
             />
             <div class="card-body">
-              <h5 class="card-title">Título del Relato 2</h5>
+              <h5 class="card-title">Empaca Como un Experto</h5>
               <p class="card-text">
-                Descripción corta del relato de viaje. Lorem ipsum dolor sit
-                amet.
+                Trucos para empacar de manera eficiente y llevar solo lo esencial.
+
               </p>
               <a href="#" class="btn btn-primary">Leer más</a>
             </div>
@@ -122,10 +133,9 @@
               alt="Relato 3"
             />
             <div class="card-body">
-              <h5 class="card-title">Título del Relato 3</h5>
+              <h5 class="card-title">Viajes Sostenibles</h5>
               <p class="card-text">
-                Descripción corta del relato de viaje. Lorem ipsum dolor sit
-                amet.
+                Guía de prácticas ecológicas y sostenibles para disfrutar de tus destinos mientras cuidas el planeta.
               </p>
               <a href="#" class="btn btn-primary">Leer más</a>
             </div>
@@ -135,16 +145,15 @@
         <div class="col-md-6 mb-4">
           <div class="card">
             <img
-              src="../img/maldivas2.jpeg"
+              src="../img/fotosincreibles.jpg"
               class="card-img-top img-fluid"
               alt="Relato 4"
             />
             
             <div class="card-body">
-              <h5 class="card-title">Título del Relato 4</h5>
+              <h5 class="card-title">Capturar Fotos Increíbles </h5>
               <p class="card-text">
-                Descripción corta del relato de viaje. Lorem ipsum dolor sit
-                amet.
+                Consejos simples para sacar el máximo provecho de tu cámara o teléfono y capturar momentos inolvidables.
               </p>
               <a href="#" class="btn btn-primary">Leer más</a>
             </div>
@@ -153,23 +162,7 @@
       </div>
     </div>
 
-    <!-- SUSCRIPCIÓN NEWSLETTER -->
-    <section class="bg-light py-5">
-      <div class="container text-center">
-        <h2>Suscríbete a Nuestro Newsletter</h2>
-        <form class="d-flex justify-content-center mt-3">
-          <input
-            type="email"
-            class="form-control w-50"
-            placeholder="Tu email"
-            required
-          />
-          <button class="btn btn-primary ms-2" type="submit">
-            Suscribirse
-          </button>
-        </form>
-      </div>
-    </section>
+    
 
     <!-- FOOTER -->
     <footer class="bg-dark text-white text-center p-4">

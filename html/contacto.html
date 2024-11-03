@@ -23,9 +23,9 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../img/logo.jpg" alt="foto logo" style="width: 50%"
-        /></a>
+        <a class="navbar-brand" href="index.html">
+          <img src="../img/logo.png" alt="foto logo" style="width: 50%" />
+        </a>
 
         <button
           class="navbar-toggler"
@@ -40,7 +40,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link" href="../index.html">Inicio</a>
             </li>
@@ -57,32 +57,37 @@
               <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
           </ul>
+          <a href="destinos.html" class="btn btn-primary ms-2"
+            >Reservar ahora</a
+          >
         </div>
       </div>
     </nav>
     <!-- FIN NAVBAR -->
 
-    <!-- HEADER -->
-
+    <!-- HERO SECTION -->
     <header
       class="hero-section text-center p-5"
       style="
-        background-image: url('../img/cairo.jpg'); /* height: 30px; */
+        background-image: url('../img/contacto1.jpg'); /* height: 30px; */
         min-height: 200px;
       "
     >
       <div class="container">
-        <h1 class="display-4 fw-bold">Blog de Estilo Viajero</h1>
+        <h1 class="display-4">Contactanos</h1>
         <p class="lead">
-          Descubre consejos, destinos y más para tus próximas aventuras.
+          Descubre los mejores destinos y ofertas exclusivas para tus próximas
+          vacaciones.
         </p>
       </div>
     </header>
 
+  
     <section class="form-location-section container my-5 d-flex flex-column flex-lg-row text-center">
         <!-- Formulario -->
         <div class="form-section me-lg-3 mb-4 mb-lg-0 flex-fill">
-          <h2>Hablemos</h2>
+          <h2 class="text-center">Hablemos</h2>
+
           <form class="mx-auto" style="max-width: 600px">
             <div class="row">
               <div class="col-md-6 mb-3">
@@ -107,8 +112,7 @@
         
         <!-- Ubicación -->
         <div class="location-section flex-fill">
-          <h3>Ubicación</h3>
-          <p>Nos encontramos en la Ciudad de Buenos Aires</p>
+          <h2 class="text-center">Ubicación</h2>
           <div class="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.23949906467!2d-58.43329845000001!3d-34.615823750000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1729546844360!5m2!1ses-419!2sar"
@@ -124,7 +128,23 @@
       </section>
       
 
-
+<!-- SUSCRIPCIÓN NEWSLETTER -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h2>Suscríbete a Nuestro Newsletter</h2>
+    <form class="d-flex justify-content-center mt-3">
+      <input
+        type="email"
+        class="form-control w-50"
+        placeholder="Tu email"
+        required
+      />
+      <button class="btn btn-primary ms-2" type="submit">
+        Suscribirse
+      </button>
+    </form>
+  </div>
+</section>
 
        <!-- FOOTER -->
        <footer class="bg-dark text-white text-center p-4">
