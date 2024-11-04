@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+}
+
+// Variables de colores
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #343a40;
+  --bg-color: #f8f9fa;
+  --text-color: #272828;
+  --footer-bg: #767676;
+}
+
+@import 'mixins';
+
+// Variable de tema
+$theme-color: 'dark';
+
+// Estilos Generales
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Estilo botones
+.btn {
+  background-color: var(--text-color);
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  transition: background-color 0.3s ease;
+
+  @if $theme-color == 'dark' {
+      background-color: #333;
+      color: #fff;
+  } @else if $theme-color == 'light' {
+      background-color: #fff;
+      color: #333;
+  }
+
+  &:hover {
+      background-color: #4a4a4a;
+      color: #fff;
+  }
+}
+
+// Bucle para generar clases de margen
+@for $i from 1 through 5 {
+  .m-#{$i} {
+      margin: #{$i * 0.5}rem;
+  }
+}
+
+// Estilo para los links en el nav
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+
+  &:hover {
+      text-decoration: underline;
+  }
+}
+
+// Espaciado entre elementos del navbar
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .nav-item {
+      margin: 0.5rem;
+      color: var(--text-color);
+  }
+}
+
+// Estilo para el botón del nav en la versión móvil
+@media (max-width: 992px) {
+  .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar-collapse {
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .btn {
+      text-align: center;
+  }
+}

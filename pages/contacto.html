@@ -12,18 +12,27 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fuentes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Librerias Animacion -->
+    <link
+      el="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilos.css" />
   </head>
 
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="../index.html">
           <img src="../img/logo.png" alt="foto logo" style="width: 50%" />
         </a>
 
@@ -69,12 +78,12 @@
     <header
       class="hero-section text-center p-5"
       style="
-        background-image: url('../img/destinos1.jpg'); /* height: 30px; */
+        background-image: url('../img/contacto1.jpg'); /* height: 30px; */
         min-height: 200px;
       "
     >
       <div class="container">
-        <h1 class="display-4">Ofertas especiales</h1>
+        <h1 class="display-4">Contactanos</h1>
         <p class="lead">
           Descubre los mejores destinos y ofertas exclusivas para tus próximas
           vacaciones.
@@ -82,95 +91,86 @@
       </div>
     </header>
 
-    <!-- DESTINOS DESTACADOS -->
-    <section id="destinos" class="container my-5">
-      <h2 class="text-center">Destinos destacados</h2>
+    <section
+      class="form-location-section container my-5 d-flex flex-column flex-lg-row text-center"
+    >
+      <!-- Formulario -->
+      <div class="form-section me-lg-3 mb-4 mb-lg-0 flex-fill">
+        <h2 class="text-center">Hablemos</h2>
 
-      <div class="row mt-4">
-        <div class="col-md-4 col-12 mb-4">
-          <img src="../img/tokio.jpg" class="img-fluid" alt="París, Francia" />
-          <p class="text-center fw-bold">Tokio, Japón</p>
-          <p class="text-center">
-            Sumérgete en una metrópoli vibrante que combina tradición y
-            modernidad.
-          </p>
-          <a href="html/destinos.html" class="btn btn-primary mt-3"
-            >Reservar ahora</a
-          >
-        </div>
+        <form class="mx-auto" style="max-width: 600px">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nombre"
+                required
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="col-md-12 mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Asunto"
+                required
+              />
+            </div>
+            <div class="col-md-12 mb-3">
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Mensaje"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <button class="btn btn-primary mt-3" type="submit">Enviar</button>
+        </form>
+      </div>
 
-        <div class="col-md-4 col-12 mb-4">
-          <img
-            src="../img/nuevayork.jpg"
-            class="img-fluid"
-            alt="París, Francia"
-          />
-          <p class="text-center fw-bold">Nueva York, EE.UU</p>
-          <p class="text-center">
-            Descubre la Gran Manzana, llena de energía y diversidad cultural.
-          </p>
-          <a href="html/destinos.html" class="btn btn-primary mt-3"
-            >Reservar ahora</a
-          >
-        </div>
-
-        <div class="col-md-4 col-12 mb-4">
-          <img
-            src="../img/barcelona.jpg"
-            class="img-fluid"
-            alt="París, Francia"
-          />
-          <p class="text-center fw-bold">Barcelona, España</p>
-          <p class="text-center">
-            Admira la arquitectura de Gaudí y disfruta de sus playas soleadas.
-          </p>
-          <a href="html/destinos.html" class="btn btn-primary mt-3"
-            >Reservar ahora</a
-          >
-        </div>
-
-        <div class="col-md-4 col-12 mb-4">
-          <img
-            src="../img/australia.jpg"
-            class="img-fluid"
-            alt="París, Francia"
-          />
-          <p class="text-center fw-bold">Sídney, Australia</p>
-          <p class="text-center">
-            Visita la famosa Ópera y relájate en sus hermosas playas.
-          </p>
-          <a href="html/destinos.html" class="btn btn-primary mt-3"
-            >Reservar ahora</a
-          >
-        </div>
-
-        <div class="col-md-4 col-12 mb-4">
-          <img src="../img/cairo.jpg" class="img-fluid" alt="París, Francia" />
-          <p class="text-center fw-bold">El Cairo, Egipto</p>
-          <p class="text-center">
-            Descubre las majestuosas pirámides y sumérgete en la historia
-            antigua.
-          </p>
-          <a href="html/destinos.html" class="btn btn-primary mt-3"
-            >Reservar ahora</a
-          >
-        </div>
-
-        <div class="col-md-4 col-12 mb-4">
-          <img src="../img/paris.jpg" class="img-fluid" alt="París, Francia" />
-          <p class="text-center fw-bold">París, Francia</p>
-          <p class="text-center">
-            Descubre las majestuosas pirámides y sumérgete en la historia
-            antigua.
-          </p>
-          <a href="html/destinos.html" class="btn btn-primary mt-3"
-            >Reservar ahora</a
-          >
+      <!-- Ubicación -->
+      <div class="location-section flex-fill">
+        <h2 class="text-center">Ubicación</h2>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.23949906467!2d-58.43329845000001!3d-34.615823750000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1729546844360!5m2!1ses-419!2sar"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </section>
 
-    <!-- FILA DE DESTINOS CON IMÁGENES -->
+    <!-- SUSCRIPCIÓN NEWSLETTER -->
+    <section class="bg-light py-5">
+      <div class="container text-center">
+        <h2>Suscríbete a Nuestro Newsletter</h2>
+        <form class="d-flex justify-content-center mt-3">
+          <input
+            type="email"
+            class="form-control w-50"
+            placeholder="Tu email"
+            required
+          />
+          <button class="btn btn-primary ms-2" type="submit">
+            Suscribirse
+          </button>
+        </form>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <footer class="bg-dark text-white text-center p-4">
@@ -192,6 +192,12 @@
         </p>
       </div>
     </footer>
+
+    <!-- Scripts AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- Scripts Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

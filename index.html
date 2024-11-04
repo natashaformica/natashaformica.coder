@@ -12,13 +12,21 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Fuentes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Librerias Animacion -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css" />
   </head>
-
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,19 +53,19 @@
               <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="html/destinos.html">Destinos</a>
+              <a class="nav-link" href="pages/destinos.html">Destinos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="html/consejos.html">Consejos</a>
+              <a class="nav-link" href="pages/consejos.html">Consejos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="html/blog.html">Blog</a>
+              <a class="nav-link" href="pages/blog.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="html/contacto.html">Contacto</a>
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
             </li>
           </ul>
-          <a href="html/destinos.html" class="btn btn-primary ms-2"
+          <a href="pages/destinos.html" class="btn btn-primary ms-2"
             >Reservar ahora</a
           >
         </div>
@@ -71,7 +79,7 @@
       style="background-image: url('img/index.jpg'); height: 500px"
     >
       <div class="container">
-        <h1>
+        <h1 class="animate__animated animate__bounce animate__delay-2s	2s">
           Explora el mundo,<br />
           vive tus sueños
         </h1>
@@ -135,15 +143,29 @@
       <section id="destinos" class="container">
         <h2 class="text-center">Destinos destacados</h2>
         <div class="row mt-4">
-          <div class="col-md-4 col-12 mb-4">
+          <div
+            class="col-md-4 col-12 mb-4"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
             <img src="img/paris.jpg" class="img-fluid" alt="París, Francia" />
             <p class="text-center">París, Francia</p>
           </div>
-          <div class="col-md-4 col-12 mb-4">
+
+          <div
+            class="col-md-4 col-12 mb-4"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
             <img src="img/tokio.jpg" class="img-fluid" alt="Tokio, Japón" />
             <p class="text-center">Tokio, Japón</p>
           </div>
-          <div class="col-md-4 col-12 mb-4">
+
+          <div
+            class="col-md-4 col-12 mb-4"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
             <img
               src="img/nuevayork.jpg"
               class="img-fluid"
@@ -199,6 +221,12 @@
         </p>
       </div>
     </footer>
+
+    <!-- Scripts AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- Scripts Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
