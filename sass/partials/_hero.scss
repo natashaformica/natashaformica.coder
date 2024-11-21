@@ -1,10 +1,14 @@
+// _hero.scss
+
+@import 'variables';
+
 .hero-section {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('img/index-1.jpg');
+  background-image: url('/img/index.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -20,7 +24,6 @@
   font-weight: 500;
 }
 
-// Fondo y capa de superposición en Hero Section
 .hero-section::before {
   content: '';
   position: absolute;

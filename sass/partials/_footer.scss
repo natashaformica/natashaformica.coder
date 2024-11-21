@@ -1,19 +1,23 @@
+// _footer.scss
+
 footer {
+    background-color: $footer-bg;
     color: white;
     padding: 20px 0;
     text-align: center;
-
+  
     input {
-        max-width: 300px;
+      max-width: 300px;
     }
-
+  
     a {
-        color: white;
-        text-decoration: none;
-        margin: 0 15px;
-
-        &:hover {
-            text-decoration: underline;
-        }
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+  
+      &:hover {
+        text-decoration: underline;
+      }
     }
-}
+  }
+  

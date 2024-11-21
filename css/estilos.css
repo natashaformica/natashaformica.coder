@@ -107,7 +107,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("img/index-1.jpg");
+  background-image: url("/img/index.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -193,6 +193,7 @@ nav a:hover {
 }
 
 footer {
+  background-color: #767676;
   color: white;
   padding: 20px 0;
   text-align: center;

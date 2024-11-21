@@ -1,34 +1,36 @@
+// _tarjetas.scss
+
 @import 'mixins';
 
 .card,
 .blockquote {
-    max-width: 100%;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.3s;
-    margin: 1.5rem;
-    align-items: center;
-    @include box-shadow(); 
+  max-width: 100%;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  margin: 1.5rem;
+  align-items: center;
+  @include box-shadow(); 
 }
 
 .icono-atencion-personalizada {
-    width: 30px; 
-    height: 30px; 
-    object-fit: contain;
+  width: 30px; 
+  height: 30px; 
+  object-fit: contain;
 }
 
 .blockquote p {
-    margin: 3rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
+  margin: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .card p {
-    color: #666;
-    font-size: 1rem;
+  color: #666;
+  font-size: 1rem;
 }

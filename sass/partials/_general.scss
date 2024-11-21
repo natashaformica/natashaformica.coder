@@ -1,3 +1,9 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$font-size-base: 16px;
+$logo-size: 50%;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +19,10 @@
   --footer-bg: #767676;
 }
 
+
+
+
+@import 'variables';
 @import 'mixins';
 
 // Variable de tema
@@ -110,3 +120,4 @@ nav a {
       text-align: center;
   }
 }
+

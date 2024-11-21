@@ -1,3 +1,16 @@
+// _mixins.scss
+
+// Mixin para box-shadow
 @mixin box-shadow($x: 0px, $y: 4px, $blur: 8px, $color: rgba(0, 0, 0, 0.1)) {
   box-shadow: $x $y $blur $color;
+}
+
+// Mixin para establecer márgenes
+@mixin margin($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  margin: $top $right $bottom $left;
+}
+
+// Mixin para establecer padding
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  padding: $top $right $bottom $left;
 }
