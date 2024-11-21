@@ -1,12 +1,9 @@
-
 * {
   margin: 0;
   padding: 0;
   font-family: "Jost", sans-serif;
-  
 }
 
-// Variables de colores
 :root {
   --primary-color: #007bff;
   --secondary-color: #343a40;
@@ -15,13 +12,9 @@
   --footer-bg: #767676;
 }
 
-
-
-
 @import 'variables';
 @import 'mixins';
 
-// Variable de tema
 $theme-color: 'dark';
 
 // Estilos Generales
@@ -46,7 +39,7 @@ body {
   width: 50%;
 }
 
-// Estilo botones
+// Estilos de botones
 .btn {
   background-color: var(--text-color);
   color: #fff;
@@ -55,72 +48,73 @@ body {
   transition: background-color 0.3s ease;
 
   @if $theme-color == 'dark' {
-      background-color: #333;
-      color: #fff;
+    background-color: #333;
+    color: #fff;
   } @else if $theme-color == 'light' {
-      background-color: #fff;
-      color: #333;
+    background-color: #fff;
+    color: #333;
   }
 
   &:hover {
-      background-color: #4a4a4a;
-      color: #fff;
+    background-color: #4a4a4a;
+    color: #fff;
   }
 }
 
-// Bucle para generar clases de margen
+// Generación de clases de margen con bucle
 @for $i from 1 through 5 {
   .m-#{$i} {
-      margin: #{$i * 0.5}rem;
+    margin: #{$i * 0.5}rem;
   }
 }
 
-// Estilo para los links en el nav
-nav a {
-  color: var(--text-color);
-  text-decoration: none;
+// Estilos del nav
+nav {
+  a {
+    color: var(--text-color);
+    text-decoration: none;
 
-  &:hover {
+    &:hover {
       text-decoration: underline;
+    }
   }
-}
 
-// Espaciado entre elementos del navbar
-.navbar-nav {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 
-  .nav-item {
+    .nav-item {
       margin: 0.5rem;
       color: var(--text-color);
+    }
   }
-}
 
-// Estilo para el botón del nav en la versión móvil
-@media (max-width: 992px) {
-  .navbar {
+  @media (max-width: 992px) {
+    .navbar {
       display: flex;
       flex-direction: column;
       align-items: center;
-  }
+    }
 
-  .navbar-collapse {
-      display: flex; 
+    .navbar-collapse {
+      display: flex;
       flex-direction: column;
       align-items: center;
-  }
+    }
 
-  .btn {
+    .btn {
       text-align: center;
+    }
   }
 }
 
+// Estilos para formulario y mapa
 .form-max-width {
   max-width: 600px;
 }
@@ -131,7 +125,6 @@ nav a {
   height: 300px;
 }
 
-
 .my-container {
   width: 100%;
   max-width: 1200px;
@@ -139,11 +132,16 @@ nav a {
   padding: 0 15px;
 }
 
-
 .my-col-12 {
   width: 100%;
 }
 
 .my-col-md-4 {
   width: 33.33%;
+}
+
+@media (max-width: 768px) {
+  .my-col-md-4 {
+    width: 100%;
+  }
 }

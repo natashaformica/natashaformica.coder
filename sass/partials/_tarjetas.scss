@@ -12,6 +12,15 @@
   margin: 1.5rem;
   align-items: center;
   @include box-shadow(); 
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  p {
+    color: #666;
+    font-size: 1rem;
+  }
 }
 
 .icono-atencion-personalizada {
@@ -20,17 +29,10 @@
   object-fit: contain;
 }
 
-.blockquote p {
-  margin: 3rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
-.card p {
-  color: #666;
-  font-size: 1rem;
+.blockquote {
+  p {
+    margin: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
 }
